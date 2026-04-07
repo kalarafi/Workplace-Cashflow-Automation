@@ -1,0 +1,11 @@
+
+## Deployment Instructions
+
+1. **Set up GitHub repository**:
+```bash
+git init
+git add .
+git commit -m "Initial commit: Cash flow automation system"
+git branch -M main
+git remote add origin https://github.com/yourusername/cashflow-automation.git
+git push -u origin main

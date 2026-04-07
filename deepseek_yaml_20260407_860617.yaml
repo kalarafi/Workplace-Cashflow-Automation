@@ -1,0 +1,58 @@
+# Cash Flow Automation Configuration
+
+# Banking & Payment Configuration
+banking:
+  primary_bank:
+    api_key: ${BANK_API_KEY}
+    account_id: ${BANK_ACCOUNT_ID}
+    api_endpoint: "https://api.bank.com/v1"
+  
+  payment_gateways:
+    stripe:
+      enabled: true
+      api_key: ${STRIPE_API_KEY}
+    paypal:
+      enabled: false
+      api_key: ${PAYPAL_API_KEY}
+
+# Alert Configuration
+alerts:
+  min_cash_threshold: 50000
+  max_cash_threshold: 500000
+  email_enabled: true
+  webhook_enabled: false
+  slack_webhook: ${SLACK_WEBHOOK_URL}
+
+# Email Configuration
+email:
+  smtp_server: "smtp.gmail.com"
+  smtp_port: 587
+  from_address: "finance@company.com"
+  alert_recipient: "cfo@company.com"
+  username: ${EMAIL_USERNAME}
+  password: ${EMAIL_PASSWORD}
+
+# Reporting Configuration
+reporting:
+  format: "json"
+  save_charts: true
+  report_directory: "reports"
+  retention_days: 90
+
+# Automation Schedule (cron expressions)
+schedule:
+  daily_processing: "0 9 * * *"  # 9 AM daily
+  invoice_generation: "0 0 1 * *"  # 1st of month at midnight
+  report_generation: "30 17 * * *"  # 5:30 PM daily
+
+# Accounting Integration
+accounting:
+  software: "quickbooks"
+  api_endpoint: "https://quickbooks.api.intuit.com"
+  sync_frequency: "hourly"
+
+# Risk Management
+risk:
+  large_transaction_threshold: 100000
+  require_approval_above: 50000
+  fraud_detection_enabled: true

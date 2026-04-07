@@ -1,0 +1,1 @@
+forecast = calculator.forecast_cashflow(days=90)

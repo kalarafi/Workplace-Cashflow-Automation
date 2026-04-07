@@ -1,0 +1,20 @@
+cashflow-automation/
+├── README.md
+├── requirements.txt
+├── .env.example
+├── config.yaml
+├── main.py
+├── cashflow_engine/
+│   ├── __init__.py
+│   ├── cashflow_calculator.py
+│   ├── payment_processor.py
+│   ├── invoice_manager.py
+│   └── reporting.py
+├── data/
+│   ├── sample_invoices.csv
+│   └── sample_payments.csv
+├── tests/
+│   ├── test_cashflow.py
+│   └── test_payments.py
+└── logs/
+    └── .gitkeep

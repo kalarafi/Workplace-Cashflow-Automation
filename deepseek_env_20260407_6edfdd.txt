@@ -1,0 +1,9 @@
+# API Keys and Sensitive Configuration
+BANK_API_KEY=your_bank_api_key_here
+BANK_ACCOUNT_ID=your_account_id
+STRIPE_API_KEY=sk_live_your_stripe_key
+PAYPAL_API_KEY=your_paypal_key
+SLACK_WEBHOOK_URL=https://hooks.slack.com/services/xxx/yyy/zzz
+EMAIL_USERNAME=finance@company.com
+EMAIL_PASSWORD=your_email_password
+DATABASE_URL=postgresql://user:pass@localhost/cashflow
